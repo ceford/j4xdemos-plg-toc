@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="4.0" method="upgrade" group="content">
+	<name>PLG_J4XDEMOSTOC</name>
+	<creationDate>August 2019</creationDate>
+	<author>Clifford E Ford</author>
+	<authorEmail>cliff@ford.myzen.co.uk</authorEmail>
+	<authorUrl>http://www.fford.me.uk/</authorUrl>
+	<copyright>Copyright (C) 2019 Clifford E Ford, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>PLG_J4XDEMOSTOC_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="j4xdemostoc">j4xdemostoc.php</filename>
+	</files>
+	
+	<languages folder="administrator/language">
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_j4xdemostoc.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_j4xdemostoc.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="help"
+					type="text"
+					label="PLG_J4XDEMOSTOC_PARAMS_APPLIES_LABEL"
+					description="PLG_J4XDEMOSTOC_PARAMS_APPLIES_DESC"
+					default="PLG_J4XDEMOSTOC_PARAMS_APPLIES_DEFAULT"
+					readonly="readonly"
+				/>
+
+				<field 
+					name="toc_class"
+					type="list"
+					label="PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_LABEL"
+					description="PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_DESC"
+					default="light"
+				>
+					<option value="light">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_LIGHT</option>
+					<option value="info">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_INFO</option>
+					<option value="primary">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_PRIMARY</option>
+					<option value="secondary">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_SECONDARY</option>
+					<option value="success">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_SUCCESS</option>
+					<option value="danger">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_DANGER</option>
+					<option value="warning">PLG_J4XDEMOSTOC_PARAMS_CARD_CLASS_OPTION_WARNING</option>
+				</field>
+
+				<field 
+					name="toc_head_class"
+					type="list"
+					label="PLG_J4XDEMOSTOC_PARAMS_CARD_HEAD_CLASS_LABEL"
+					description="PLG_J4XDEMOSTOC_PARAMS_CARD_HEAD_CLASS_DESC"
+					default="center"
+				>
+					<option value="center">center</option>
+					<option value="left">left</option>
+				</field>
+
+				<field 
+					name="list_indent"
+					type="list"
+					label="PLG_J4XDEMOSTOC_PARAMS_CONTENTS_INDENT_LABEL"
+					description="PLG_J4XDEMOSTOC_PARAMS_CONTENTS_INDENT_DESC"
+					default="1"
+				>
+					<option value="1">1rem</option>
+					<option value="2">2rem</option>
+					<option value="3">3rem</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
