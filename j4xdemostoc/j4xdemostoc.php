@@ -122,7 +122,7 @@ class PlgContentJ4xdemostoc extends CMSPlugin
 		// assemble the html to generate the top part of the card
 		$toc = '<div class="card ' . $card_classes[$toc_class] . '">';
 		$toc .= '<div class="card-header" style="background-color: rgba(0,0,0,0.1);">';
-		$toc .= '<h2 class="' . $headclass . '">' . Text::_('PLG_J4XDEMOSTOC_CONTENTS') . '</h2>';
+		$toc .= '<h2 class="' . $headclass . '">' . Text::_('PLG_CONTENT_J4XDEMOSTOC_CONTENTS') . '</h2>';
 		$toc .= '</div><div class="card-body">';
 		$toc .= '<ul style="margin-left: 0;">';
 
